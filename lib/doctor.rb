@@ -29,7 +29,7 @@ class Doctor
     end
   end
   
-    def patients
+  def patients
     selected.map do |selec|
       selec.patient
     end
