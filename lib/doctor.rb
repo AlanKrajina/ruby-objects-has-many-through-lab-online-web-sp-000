@@ -32,7 +32,7 @@ class Doctor
   end
  #     binding.pry
 
-  def patients #returns  with same doctor = apointment 
+  def patients #returns patient with same doctor = apointment 
     selected.map do |selec|
       selec.patient
     end
