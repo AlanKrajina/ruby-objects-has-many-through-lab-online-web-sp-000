@@ -23,10 +23,15 @@ class Doctor
     @appointments
   end
   
-  def patients
+  def selected
     Appointment.all.select do |patient|
       patient.doctor == self
     end
   end
   
+    def patients
+    selected.map do |selec|
+      selec.patient
+    end
+  end
 end
