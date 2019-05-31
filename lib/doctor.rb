@@ -23,13 +23,13 @@ class Doctor
     @appointments
   end
   
-  def selected
+  def selected  #returns matched appointment.doctor to SELF (this)
     Appointment.all.select do |app|
       app.doctor == self
     end
   end
   
-  def patients
+  def patients #returns same doctor = apointment = patient
     selected.map do |selec|
       selec.patient
     end
