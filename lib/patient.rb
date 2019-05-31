@@ -23,14 +23,14 @@ class Patient
   @apps
   end
 
-  def appointments
+  def app
     Appointment.all.select do |app|
       app.patient == self
     end
   end
   
   def doctors
-    appointments.map do |pat|
+    app.map do |pat|
       pat.doctor
     end
   end
