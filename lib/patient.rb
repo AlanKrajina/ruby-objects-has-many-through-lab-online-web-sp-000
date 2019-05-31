@@ -17,9 +17,9 @@ class Patient
     end
   end
   
-#  def artists
-#    songs.map do |art|
-#      art.artist
-#    end
-#  end
+  def doctors
+    appointments.map do |pat|
+      pat.doctor
+    end
+  end
 end
