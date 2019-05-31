@@ -20,7 +20,7 @@ class Patient
   end
 
   def appointments
-  @apps
+    @apps
   end
 
 
