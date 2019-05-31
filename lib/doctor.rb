@@ -30,7 +30,7 @@ class Doctor
       app.doctor == self
     end
   end
-      binding.pry
+ #     binding.pry
 
   def patients #returns same doctor = apointment + = patient
     selected.map do |selec|
