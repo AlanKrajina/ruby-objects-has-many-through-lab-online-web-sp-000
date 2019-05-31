@@ -38,3 +38,8 @@ class Doctor
     end
   end
 end
+
+#  1) Doctor #patients has many patients, through appointments
+#     Failure/Error: expect(doctor_who.patients).to include(hevydevy)
+#
+#       expected ["Friday, January 32nd"] to include #<Patient:0x0000000001a50978 @name="Devin Townsend">
