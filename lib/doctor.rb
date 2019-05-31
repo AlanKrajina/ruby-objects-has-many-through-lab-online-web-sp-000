@@ -29,7 +29,7 @@ class Doctor
     end
   end
   
-  def patients #returns same doctor = apointment = patient
+  def patients #returns same doctor = apointment + = patient
     selected.map do |selec|
       selec.patient
     end
