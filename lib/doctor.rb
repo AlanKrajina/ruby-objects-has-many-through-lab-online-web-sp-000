@@ -29,6 +29,7 @@ class Doctor
     Appointment.all.select do |app|
       app.doctor == self
     end
+    binding.pry
   end
   
   def patients #returns same doctor = apointment + = patient
