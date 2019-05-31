@@ -1,5 +1,4 @@
 class Doctor
-  attr_accessor :appointments
   attr_reader :name
   @@all = []
   
@@ -20,8 +19,8 @@ class Doctor
     appointment
   end
   
-  def patients
-    
+  def appointments
+    @appointments
   end
   
 end
