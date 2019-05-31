@@ -16,7 +16,7 @@ class Doctor
     appointment = Appointment.new(date,patient)
     @appointments << appointment
     appointment.doctor = self
-    
+    appointment
   end
   
 end
