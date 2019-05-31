@@ -11,11 +11,11 @@ class Patient
     @@all
   end
 
-#  def songs
-#    Song.all.select do |song|
-#      song.genre == self
-#    end
-#  end
+  def appointments
+    Appointment.all.select do |app|
+      app.patient == self
+    end
+  end
   
 #  def artists
 #    songs.map do |art|
