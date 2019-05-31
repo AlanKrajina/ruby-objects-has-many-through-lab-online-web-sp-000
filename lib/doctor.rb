@@ -20,4 +20,8 @@ class Doctor
     appointment
   end
   
+  def patients
+    
+  end
+  
 end
