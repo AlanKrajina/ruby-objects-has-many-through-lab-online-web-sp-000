@@ -29,9 +29,9 @@ class Doctor
     Appointment.all.select do |app|
       app.doctor == self
     end
-    binding.pry
   end
-  
+      binding.pry
+
   def patients #returns same doctor = apointment + = patient
     selected.map do |selec|
       selec.patient
